@@ -1,0 +1,157 @@
+
+.d-flex{
+    border-radius: 100px;
+  }
+  .head3{
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30px;
+  }
+  .container-fluid{
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  
+  .card {
+    padding-top: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-container {
+    position: relative;
+    height: 200px;
+    width: 100%;     
+    height: 200px;     
+     
+  }
+  .card-img-top {
+    width: 100%;       
+    height: 250px;    
+     
+  }
+  .card-title{
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  .stars{
+    color:black;
+  }
+  .offer{
+    height: 50px;
+    padding-top:10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  
+  .col-md-4 {
+    padding-left: 100px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .div{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+  }
+  .slider{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+  }
+  @keyframes rotate{
+    0%{
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  .slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg))translateZ(350px);
+  
+  }
+  .slider span img{
+    position: absolute;
+    top: 0;
+    left: o;
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    object-fit: cover;
+    transition: 2s;
+  
+  }
+  .slider span:hover img{
+    transform: translateY(-50px)scale(1.2);
+  }
+  .top{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .card-title{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+  }
+  .contact{
+background-color: gray;
+  }
+  .boo{
+    padding-top: 80px;
+    padding-block-end: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .card2-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-block-end: 30px;
+    padding-left: 50px;
+  }
+  .footer{
+    background: grey;
+    margin-top: 50px;
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1.875rem;
+}
+.footer .footer-link a:hover{
+    color: #fff !important;
+}
+.footer a i {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+.footer .footer-link,
+.footer a i{
+    padding: 0 0.7rem;
+}
+  
